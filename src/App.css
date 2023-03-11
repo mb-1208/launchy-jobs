@@ -239,9 +239,10 @@ html {
     }
 
     .cub-3 {
-        left: unset;
+        opacity: 0;
+        /* left: unset;
         right: 0;
-        transform: translate(-80%, 150%);
+        transform: translate(-80%, 150%); */
     }
 
     .border-join{
