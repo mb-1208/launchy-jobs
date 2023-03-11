@@ -226,17 +226,24 @@ html {
 @media only screen and (max-width: 767.5px) {
     .cub-1 {
         width: 10vh;
+        transform: scale(1, -1) translate(50%, 0);
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1) translate(50%, 0);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
     }
 
     .cub-2 {
         width: 7vh;
-        transform: translate(-5%, -55%);
+        bottom: 1em;
+        transform: unset;
     }
 
     .cub-3 {
-        left: unset;
+        opacity: 0;
+        /* left: unset;
         right: 0;
-        transform: translate(-80%, 150%);
+        transform: translate(-80%, 150%); */
     }
 
     .border-join{
