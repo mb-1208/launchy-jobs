@@ -167,6 +167,14 @@
     justify-content: center;
 }
 
+.btn-tele {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-70%, -20%);
+    background: linear-gradient(180deg,rgb(234, 51, 35) 0%, rgb(224, 179, 175) 100%);
+}
+
 *{
     font-family: IBM Plex Sans;
 }

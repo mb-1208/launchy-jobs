@@ -8,7 +8,7 @@ import {
   addDoc,
 } from 'firebase/firestore';
 // import { FaCheck } from "react-icons/fa";
-import sheetsImg from './assets/sheets1.png';
+import sheetsImg from './assets/sheets-img.png';
 import cub from './assets/compo/Cub.png';
 import join from './assets/compo/join.png';
 import joinWhite from './assets/compo/join-white.png';
@@ -45,7 +45,7 @@ function App() {
           await addDoc(colRefget, {
             email: email,
             status: 'pending',
-            referring: 'angels',
+            referring: 'jobs',
             createdAt: new Date().toUTCString(),
           });
         };
@@ -56,7 +56,7 @@ function App() {
           setTimeout(function () {
             setEmailValue('');
             setProcessCondition('Subs');
-            window.location.replace('https://docs.google.com/spreadsheets/d/1yiN8ry0BG2kt8CFDzbIdkVzDXmsLbvJ1ruGtnGEHUxo/edit?usp=sharing');
+            window.location.replace('https://docs.google.com/spreadsheets/d/1agSb5Fd7mbPlawh0TUnyz5QadGKSeXJ24bjoGNbRhaI/edit?usp=sharing');
           }, 1000);
         }).catch(function (error) {
           console.log(error);
@@ -197,16 +197,22 @@ function App() {
         <div className='px-4 md:px-28 w-full mt-8 md:mt-16'>
 
           <MediaQuery minWidth={992}>
-            <div className='border-2 lg:border-4 border-red-900 py-2 px-6 lg:px-8 lg:py-6 flex items-center border-join justify-center'>
-              <h2 className='w-full text-sm md:text-md lg:text-xl font-black text-red-900 px-2 range-text-join'>Join our web3 jobs telegram group</h2>
-              <div className='text-end min-w-fit lg:min-w-unset'>
-                <a href='/#' className='bg-red-900 py-2 px-8 font-black text-white text-xl rounded-full inline-flex'>Join Us <img className='ml-2 join-logo-white' src={joinWhite} alt="" /></a>
-              </div>
+            <div className='flex items-center justify-center'>
+              <a href='https://t.me/launchyjobs' target="_blank" rel="noreferrer" className='p-4 inline-flex'>
+                <div className='relative border border-red-900 px-6 py-1 rounded-xl'>
+                  <h2 className='w-full text-sm md:text-md lg:text-xl font-black text-red-900 px-2 range-text-join'>Click to Join Our Web3 Jobs Telegram Group</h2>
+                  <div className='mx-auto btn-tele rounded-full'>
+                    <a href='https://t.me/launchyjobs' target="_blank" rel="noreferrer" className='p-4 inline-flex'>
+                      <img className='mx-auto join-logo-white' src={joinWhite} alt="" />
+                    </a>
+                  </div>
+                </div>
+              </a>
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={991.9}>
-            <a href='/#' className='border-2 lg:border-4 border-red-900 py-2 px-6 lg:px-8 lg:py-6 flex items-center border-join justify-center bg-white z-50 relative'>
-              <h2 className='w-full text-sm md:text-md lg:text-xl font-black text-red-900 px-2 range-text-join'>Join our web3 jobs telegram group</h2>
+            <a href='https://t.me/launchyjobs' target="_blank" rel="noreferrer" className='border-2 lg:border-4 border-red-900 py-2 px-6 lg:px-8 lg:py-6 flex items-center border-join justify-center bg-white z-50 relative'>
+              <h2 className='w-full text-sm md:text-md lg:text-xl font-black text-red-900 px-2 range-text-join'>Join Our Web3 Jobs Telegram Group</h2>
               <div className='text-end min-w-fit lg:min-w-unset'>
                 <img className='md:mx-2' style={{ width: '2.5vh' }} src={join} alt='' />
               </div>
