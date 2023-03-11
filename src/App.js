@@ -120,7 +120,7 @@ function App() {
           </div> */}
         {/* </MediaQuery> */}
 
-        <div className="grid max-w-lg grid-cols-1 mx-auto mt-2 md:mt-8 gap-y-12 lg:mt-24 lg:max-w-none lg:grid-cols-2 bg-transparent z-50 relative px-2">
+        <div className="grid max-w-lg grid-cols-1 mx-auto mt-4 md:mt-8 gap-y-12 lg:mt-24 lg:max-w-none lg:grid-cols-2 bg-transparent z-50 relative px-2">
           <div className="lg:pr-16 xl:pr-24">
             <div className="text-center">
               <h1 className="text-3xl font-semibold text-gray-900 sm:text-4xl xl:text-4xl font-pj">GET WEB3 JOBS LIST</h1>
