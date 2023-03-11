@@ -235,15 +235,13 @@ html {
 
     .cub-2 {
         width: 7vh;
-        bottom: 1em;
-        transform: unset;
+        transform: translate(-5%, -55%);
     }
 
     .cub-3 {
-        opacity: 0;
-        /* left: unset;
+        left: unset;
         right: 0;
-        transform: translate(-80%, 150%); */
+        transform: translate(-80%, 150%);
     }
 
     .border-join{
