@@ -251,6 +251,12 @@ html {
     .range-text-join{
         flex-basis: fit-content;
     }
+
+    .flex-center {
+        display: unset !important;
+        align-items: unset !important;
+        justify-content: unset !important;
+    }
 }
 
 @media only screen and (max-width: 991.5px) {
